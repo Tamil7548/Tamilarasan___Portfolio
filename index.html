@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tamilarasan B – Front-End Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a class="nav-logo" href="#hero">Tamilarasan<span> Portfolio</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a class="nav-hire btn btn-primary" href="mailto:tatamilarasan123@gmail.com">Hire Me</a></li>
+  </ul>
+
+  <!-- Hamburger (mobile only) -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- ══ MOBILE DRAWER ══ -->
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a href="#about"     onclick="closeMenu()">👤 &nbsp;About</a>
+  <a href="#skills"    onclick="closeMenu()">🛠️ &nbsp;Skills</a>
+  <a href="#projects"  onclick="closeMenu()">📁 &nbsp;Projects</a>
+  <a href="#education" onclick="closeMenu()">🎓 &nbsp;Education</a>
+  <a href="#contact"   onclick="closeMenu()">📬 &nbsp;Contact</a>
+  <a href="mailto:tatamilarasan123@gmail.com" class="mobile-hire-btn" onclick="closeMenu()">✉️ &nbsp;Hire Me</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot"></div> Open to Work · Front-End Developer
+    </div>
+    <h1>
+      Building the<br>
+      <span class="accent">Web, One UI</span><br>
+      at a Time.
+    </h1>
+    <p class="hero-sub">
+      Hi, I'm <strong>Tamilarasan B</strong> — a Front-End Developer from Bangalore crafting clean, responsive, and user-friendly web experiences with React.js &amp; modern JavaScript.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View My Work ↓</a>
+      <a class="btn btn-primary" href="https://drive.google.com/file/d/10FP1lutJcdJ7N9ty7a4vlwgoGULmaRtQ/view?usp=drivesdk">Download CV</a>
+      <a href="https://github.com/Tamil7548" target="_blank" rel="noopener" class="btn btn-ghost">⌥ GitHub</a>
+      <a href="https://tamil7548.github.io/Tamilarasan___Portfolio/" target="_blank" rel="noopener" class="btn btn-ghost">🌐 Portfolio</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">4+</div><div class="stat-label">Real-World Projects</div></div>
+      <div><div class="stat-num">1+</div><div class="stat-label">Year with React</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">Passion for Code</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag">About Me</div>
+      <h2>Who I Am</h2>
+      <p class="section-desc">A Commerce graduate turned Front-End Developer — driven by curiosity and the love of building things.</p>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm a passionate Front-End Developer based in Bangalore. With an MBA background, I made a deliberate shift into tech — completing a Front-End Development &amp; React course at Hejex Technology, Chennai in 2024.</p>
+        <p>I love turning ideas into real, usable products. Every project I build is focused on clean code, responsive design, and great user experience. I'm also actively exploring AI tools to speed up my workflow.</p>
+        <p>Currently seeking <strong style="color:var(--text)">entry-level Front-End / React.js Developer</strong> roles where I can contribute, grow, and build meaningful products alongside a great team.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="hl-item">
+          <div class="hl-icon">⚛️</div>
+          <div class="hl-text"><strong>React.js Focus</strong><span>Components, hooks, Context API, scalable state management</span></div>
+        </div>
+        <div class="hl-item">
+          <div class="hl-icon">📱</div>
+          <div class="hl-text"><strong>Mobile-First Design</strong><span>Responsive layouts, Bootstrap 5, cross-browser tested</span></div>
+        </div>
+        <div class="hl-item">
+          <div class="hl-icon">🔌</div>
+          <div class="hl-text"><strong>API Integration</strong><span>REST APIs, LocalStorage, real-world data handling</span></div>
+        </div>
+        <div class="hl-item">
+          <div class="hl-icon">🤖</div>
+          <div class="hl-text"><strong>AI-Enhanced Workflow</strong><span>Using AI tools daily to improve efficiency &amp; speed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag">Technical Skills</div>
+      <h2>What I Work With</h2>
+      <p class="section-desc">A practical toolkit built through real project experience — not just theory.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="sk-icon">🎨</div>
+        <div class="sk-title">Frontend Core</div>
+        <div class="sk-tags">
+          <span class="tag hi">HTML5</span><span class="tag hi">CSS3</span>
+          <span class="tag hi">JavaScript ES6</span><span class="tag">Bootstrap 5</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">⚛️</div>
+        <div class="sk-title">React.js Ecosystem</div>
+        <div class="sk-tags">
+          <span class="tag hi">React.js</span><span class="tag hi">React Hooks</span>
+          <span class="tag hi">Context API</span><span class="tag">Reusable Components</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">🛠️</div>
+        <div class="sk-title">Tools & Platforms</div>
+        <div class="sk-tags">
+          <span class="tag hi">Git</span><span class="tag hi">GitHub</span>
+          <span class="tag">Netlify</span><span class="tag">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">🔗</div>
+        <div class="sk-title">Data & APIs</div>
+        <div class="sk-tags">
+          <span class="tag hi">REST API</span><span class="tag hi">LocalStorage</span>
+          <span class="tag">MySQL</span><span class="tag">SQL Server</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">🔍</div>
+        <div class="sk-title">Quality & Testing</div>
+        <div class="sk-tags">
+          <span class="tag">Responsive Design</span><span class="tag">Cross-Browser</span>
+          <span class="tag">DevTools</span><span class="tag">Debugging</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="sk-icon">📜</div>
+        <div class="sk-title">Certifications</div>
+        <div class="sk-tags">
+          <span class="tag hi">Python – GUVI</span><span class="tag hi">Python – HCL</span>
+          <span class="tag">React – Hejex</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag">Projects</div>
+      <h2>What I've Built</h2>
+      <p class="section-desc">4 real-world applications built from scratch to solve genuine problems.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-num">PROJECT 01</div>
+        <div class="proj-title">🛍️ E-Commerce UI</div>
+        <div class="proj-desc">A fully responsive e-commerce app with product listing, cart functionality, and global state managed via Context API with reusable components for scalable architecture.</div>
+        <div class="proj-stack">
+          <span class="tag hi">React.js</span><span class="tag">Context API</span><span class="tag">CSS3</span><span class="tag">Netlify</span>
+        </div>
+        <div class="proj-links">
+          <a class="plink" href="https://github.com/Tamil7548/Tamil-react-E-commerce-ui" target="_blank" rel="noopener">⌥ GitHub</a>
+          <a class="plink" href="https://tamilarasan-react-e-commerce-ui.netlify.app/" target="_blank">↗ Live Demo</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-num">PROJECT 02</div>
+        <div class="proj-title">📋 Job Application Tracker</div>
+        <div class="proj-desc">Track job hunt with add, edit, delete, and filter features. Data persists via LocalStorage so nothing is lost between sessions. Clean and intuitive UI.</div>
+        <div class="proj-stack">
+          <span class="tag hi">React.js</span><span class="tag">LocalStorage</span><span class="tag">React Hooks</span><span class="tag">Netlify</span>
+        </div>
+        <div class="proj-links">
+          <a class="plink" href="https://github.com/Tamil7548/tamilarasan-job-tracker-app" target="_blank" rel="noopener">⌥ GitHub</a>
+          <a class="plink" href="https://tamilarasan-react-job-tracker-app.netlify.app/" target="_blank">↗ Live Demo</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-num">PROJECT 03</div>
+        <div class="proj-title">🚗 Automobile Website</div>
+        <div class="proj-desc">A dynamic automobile showcase with reusable React components and component-based architecture with a fully responsive Bootstrap-styled layout for all screen sizes.</div>
+        <div class="proj-stack">
+          <span class="tag hi">React.js</span><span class="tag">Bootstrap 5</span><span class="tag">Components</span><span class="tag">Netlify</span>
+        </div>
+        <div class="proj-links">
+          <a class="plink" href="https://github.com/Tamil7548/Drive_Dash-project" target="_blank" rel="noopener">⌥ GitHub</a>
+          <a class="plink" href="https://tamilarasandiwakarreactproject.netlify.app/" target="_blank">↗ Live Demo</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-num">PROJECT 04</div>
+        <div class="proj-title">✅ Task Manager App</div>
+        <div class="proj-desc">A clean task management system with full CRUD operations and LocalStorage persistence. Simple, fast, and user-friendly — tasks are never lost on refresh.</div>
+        <div class="proj-stack">
+          <span class="tag hi">React.js</span><span class="tag">LocalStorage</span><span class="tag">CRUD</span><span class="tag">Netlify</span>
+        </div>
+        <div class="proj-links">
+          <a class="plink" href="https://github.com/Tamil7548/Tamilarasan-react-task-manager-app" target="_blank" rel="noopener">⌥ GitHub</a>
+          <a class="plink" href="https://tamilarasan-task-manager-app.netlify.app/" target="_blank" rel="noopener">↗ Live Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ EDUCATION ══ -->
+<section id="education">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-tag">Education</div>
+      <h2>My Learning Path</h2>
+      <p class="section-desc">From Commerce to Code — a deliberate and focused journey into Front-End Development.</p>
+    </div>
+    <div class="edu-list reveal">
+      <div class="edu-card">
+        <div class="edu-icon g">🎓</div>
+        <div>
+          <div class="edu-title">Front-End Development & React</div>
+          <div class="edu-org">Hejex Technology, Chennai</div>
+          <div class="edu-year">2024 · Course Certification</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon b">🐍</div>
+        <div>
+          <div class="edu-title">Python Certification</div>
+          <div class="edu-org">GUVI · HCL</div>
+          <div class="edu-year">2024 · Certification</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon r">📊</div>
+        <div>
+          <div class="edu-title">MBA – Master of Business Administration</div>
+          <div class="edu-org">Kingston Engineering College, Vellore</div>
+          <div class="edu-year">2023 · Postgraduate Degree</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon b">🏛️</div>
+        <div>
+          <div class="edu-title">B.Com – Bachelor of Commerce</div>
+          <div class="edu-org">Muthurangam Govt Arts College, Vellore</div>
+          <div class="edu-year">2020 · Undergraduate Degree</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="section-tag">Contact</div>
+        <h2>Let's Work Together</h2>
+        <p class="section-desc" style="margin:0 auto">Actively looking for Front-End Developer roles. Have a project or opening? Let's talk!</p>
+      </div>
+      <div class="contact-links reveal">
+        <a class="clink" href="mailto:tatamilarasan123@gmail.com">📧 tatamilarasan123@gmail.com</a>
+        <a class="clink" href="tel:+918220107548">📞 +91 82201 07548</a>
+        <a class="clink" href="https://github.com/Tamil7548" target="_blank" rel="noopener">⌥ GitHub</a>
+        <a class="clink" href="https://tamil7548.github.io/Tamilarasan___Portfolio/" target="_blank" rel="noopener">🌐 Portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p>Designed &amp; Built by <strong>Tamilarasan B</strong> · Bangalore, India · 2026</p>
+</footer>
+<script>
+
+   /* ── Hamburger Toggle ── */
+  const hamburger  = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  /* Close on outside tap */
+  document.addEventListener('click', (e) => {
+    if (mobileMenu.classList.contains('open') &&
+        !mobileMenu.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  /* Close on resize back to desktop */
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  }, { passive: true });
+
+  /* ── Scroll Reveal ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => revealObserver.observe(r));
+
+  /* ── Active nav highlight on scroll ── */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 130) current = s.id;
+    });
+    navLinks.forEach(a => {
+      const isActive = a.getAttribute('href') === '#' + current;
+      a.style.color = isActive ? 'var(--text)' : '';
+      a.style.fontWeight = isActive ? '600' : '';
+    });
+  }, { passive: true });
+</script>
+ 
+</body>
+</html>
